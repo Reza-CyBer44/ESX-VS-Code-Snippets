@@ -1,0 +1,651 @@
+{
+    "Citizen.CreateThread()": {
+		"prefix": "Citizen.CreateThread",
+		"body": [
+			"Citizen.CreateThread(function()\n-- Your Code$1\nend)",
+		],
+		"description": "Make a Thread"
+	},
+	"ESX.GetPlayerFromId()": {
+		"prefix": "ESX.GetPlayerFromId",
+		"body": [
+			"ESX.GetPlayerFromId(${1:Player Server ID})",
+		],
+		"description": "Get xPlayer From Server ID"
+	},
+	"ESX.GetPlayerFromIdentifier()": {
+		"prefix": "ESX.GetPlayerFromIdentifier",
+		"body": [
+			"ESX.GetPlayerFromIdentifier(${1:Player Identifier})",
+		],
+		"description": "Get xPlayer From Identifier"
+	},
+	"xPlayer": {
+		"prefix": [
+			"xPlayer"
+		],
+		"body": [
+			"xPlayer = ESX.GetPlayerFromI$1",
+		],
+		"description": "Get xPlayer"
+	},
+	"ESX.UseItem()": {
+		"prefix": [
+			"ESX.UseItem"
+		],
+		"body": [
+			"ESX.UseItem(${1:Server ID},'${2:Item Name}')",
+		],
+		"description": "Use Item On Someone"
+	},
+	"ESX.Trace()": {
+		"prefix": [
+			"ESX.Trace"
+		],
+		"body": [
+			"ESX.Trace(${1:Message})",
+		],
+		"description": "Debug"
+	},
+	"ESX.GetItemLabel()": {
+		"prefix": [
+			"ESX.GetItemLabel"
+		],
+		"body": [
+			"ESX.GetItemLabel('${1:Item Name}')",
+		],
+		"description": "Gets Item Label Name"
+	},
+	"ESX.GetPlayerData()": {
+		"prefix": [
+			"ESX.GetPlayerData"
+		],
+		"body": [
+			"ESX.GetPlayerData()",
+		],
+		"description": "Gets Player Data"
+	},
+	"ESX.IsPlayerLoaded()": {
+		"prefix": [
+			"ESX.IsPlayerLoaded"
+		],
+		"body": [
+			"ESX.IsPlayerLoaded()",
+		],
+		"description": "Check If Player is loaded"
+	},
+	"ESX.SetPlayerData()": {
+		"prefix": [
+			"ESX.SetPlayerData"
+		],
+		"body": [
+			"ESX.SetPlayerData(${1:Key},${2:Value})",
+		],
+		"description": "Sets Player Data"
+	},
+	"ESX.ShowAdvancedNotification()": {
+		"prefix": [
+			"ESX.ShowAdvancedNotification"
+		],
+		"body": [
+			"ESX.ShowAdvancedNotification('${1:Header}','${2:Subject}','${3:Message}')",
+		],
+		"description": "Shows Advanced Notification"
+	},
+	"ESX.ShowHelpNotification()": {
+		"prefix": [
+			"ESX.ShowHelpNotification"
+		],
+		"body": [
+			"ESX.ShowHelpNotification('${1:Message}',${2:This Frame?},${3:Play Beep Sound?},${4:Duration})",
+		],
+		"description": "Shows Help Notification"
+	},
+	"ESX.ShowInventory()": {
+		"prefix": [
+			"ESX.ShowInventory"
+		],
+		"body": [
+			"ESX.ShowInventory()",
+		],
+		"description": "Shows Player Inventory"
+	},
+	"ESX.ShowNotification()": {
+		"prefix": [
+			"ESX.ShowNotification"
+		],
+		"body": [
+			"ESX.ShowNotification('${1:Message}')",
+		],
+		"description": "Shows Notification"
+	},
+	"ESX.TriggerServerCallback()": {
+		"prefix": [
+			"ESX.TriggerServerCallback"
+		],
+		"body": [
+			"ESX.TriggerServerCallback('${1:Callback}', function(${2:...})\n${3:--Your Code}\nend,${4:...})",
+		],
+		"description": "Trigger Server Callback"
+	},
+	"ESX.UI.Menu.Close()": {
+		"prefix": [
+			"ESX.UI.Menu.Close"
+		],
+		"body": [
+			"ESX.UI.Menu.Close(${1:Type},${2:NameSpace},${3:Name})",
+		],
+		"description": "Close ESX Menu"
+	},
+	"ESX.UI.Menu.CloseAll()": {
+		"prefix": [
+			"ESX.UI.Menu.CloseAll"
+		],
+		"body": [
+			"ESX.UI.Menu.CloseAll()",
+		],
+		"description": "Close All ESX Menus"
+	},
+	"ESX.UI.Menu.IsOpen()": {
+		"prefix": [
+			"ESX.UI.Menu.IsOpen"
+		],
+		"body": [
+			"ESX.UI.Menu.IsOpen(${1:Type},${2:NameSpace},${3:Name})",
+		],
+		"description": "checks if a menu is open"
+	},
+	"ESX.UI.Menu.Open()": {
+		"prefix": [
+			"ESX.UI.Menu.Open"
+		],
+		"body": [
+			"ESX.UI.Menu.Open(${1:'default'},${2:GetCurrentResourceName()},${3:name},\n{ \ntitle = ${4:Title}, \nalign = ${5:Align}, \nelements = elements \n}, function(data, menu)\n${6:--Your Code} \nend, function(data, menu) \nmenu.close() \nend)",
+		],
+		"description": "Open ESX Menu"
+	},
+	"ESX.ClearTimeout()": {
+		"prefix": [
+			"ESX.ClearTimeout"
+		],
+		"body": [
+			"ESX.ClearTimeout(${1:ID})",
+		],
+		"description": "Clears Timeout"
+	},
+	"ESX.DumpTable()": {
+		"prefix": [
+			"ESX.DumpTable"
+		],
+		"body": [
+			"ESX.DumpTable(${1:Table})",
+		],
+		"description": "Dumps A Table for print"
+	},
+	"ESX.GetRandomString()": {
+		"prefix": [
+			"ESX.GetRandomString"
+		],
+		"body": [
+			"ESX.GetRandomString(${1:Lenght})",
+		],
+		"description": "Generate Random String"
+	},
+	"ESX.GetWeaponComponent()": {
+		"prefix": [
+			"ESX.GetWeaponComponent"
+		],
+		"body": [
+			"ESX.GetWeaponComponent(${1:Weapon Name},${2:Component Name})",
+		],
+		"description": "This function returns the weapon component object for a weapon. Includes the component label, name and hash key. See the weapon config file for the available components."
+	},
+	"ESX.GetWeaponLabel()": {
+		"prefix": [
+			"ESX.GetWeaponLabel"
+		],
+		"body": [
+			"ESX.GetWeaponLabel(${1:Weapon Name})",
+		],
+		"description": "Get Weapon Label"
+	},
+	"ESX.GetWeaponList()": {
+		"prefix": [
+			"ESX.GetWeaponList"
+		],
+		"body": [
+			"ESX.GetWeaponList()",
+		],
+		"description": "Get Weapon List"
+	},
+	"ESX.Math.GroupDigits()": {
+		"prefix": [
+			"ESX.Math.GroupDigits"
+		],
+		"body": [
+			"ESX.Math.GroupDigits(${1:Value})",
+		],
+		"description": "This function groups numbers, making them easier to understand by humans. Used in most nofications when money is showed, for example when buying a new car at the vehicle shop."
+	},
+	"ESX.Math.Round()": {
+		"prefix": [
+			"ESX.Math.Round"
+		],
+		"body": [
+			"ESX.Math.Round(${1:Value},${2:Num Decimal Places})",
+		],
+		"description": "This function rounds off a number, and optionally you can parse how many decimals you want (defaults to 0)"
+	},
+	"ESX.SetTimeout()": {
+		"prefix": [
+			"ESX.SetTimeout"
+		],
+		"body": [
+			"ESX.SetTimeout(${1:MS},function()\n${2:--Your Code}\nend)",
+		],
+		"description": "This function sets a timeout requiring two arguments, msec (milliseconds), and cb (callback)."
+	},
+	"ESX.Math.Trim()": {
+		"prefix": [
+			"ESX.Math.Trim"
+		],
+		"body": [
+			"ESX.Math.Trim(${1:value}",
+		],
+		"description": "This function trims an text, removing all trailing whitespaces. Often used when sanitizing the GetVehicleNumberPlateText() native."
+	},
+	"ESX.GetPlayers()": {
+		"prefix": [
+			"ESX.GetPlayers"
+		],
+		"body": [
+			"ESX.GetPlayers()",
+		],
+		"description": "Get Players Server Ids"
+	},
+	"Get ESX Object": {
+		"prefix": [
+			"GetESX",
+			"ESX = nil",
+			"GetSharedObject"
+		],
+		"body": [
+			"ESX = nil \nCitizen.CreateThread(function() \nwhile ESX == nil do \nTriggerEvent('esx:getSharedObject', function(obj) ESX = obj end) \nCitizen.Wait(0) \nend \nend)",
+		],
+		"description": "Get ESX Object"
+	},
+	"xPlayers": {
+		"prefix": [
+			"xPlayers"
+		],
+		"body": [
+			"xPlayers = ESX.GetPlayers() \nfor i=1, #xPlayers, 1 do\n${1:-- Your Code}\nend",
+		],
+		"description": "Get All Players"
+	},
+	"xPlayer.triggerEvent()": {
+		"prefix": [
+			"xPlayer.triggerEvent"
+		],
+		"body": [
+			"xPlayer.triggerEvent('${1:Event Name}', ${2:...})",
+		],
+		"description": "Trigger Event"
+	},
+	"xPlayer.showNotification()": {
+		"prefix": [
+			"xPlayer.showNotification"
+		],
+		"body": [
+			"xPlayer.showNotification('${1:Message}', ${2:...})",
+		],
+		"description": "Show Notification"
+	},
+	"xPlayer.showHelpNotification()": {
+		"prefix": [
+			"xPlayer.showHelpNotification"
+		],
+		"body": [
+			"xPlayer.showHelpNotification('${1:Message}', ${2:...})",
+		],
+		"description": "Show Help Notification"
+	},
+	"xPlayer.setWeaponTint()": {
+		"prefix": [
+			"xPlayer.setWeaponTint"
+		],
+		"body": [
+			"xPlayer.setWeaponTint('${1:Weapon Name}', ${2:Weapon Tint Index})",
+		],
+		"description": "Set Weapon Tint Index"
+	},
+	"xPlayer.setName()": {
+		"prefix": [
+			"xPlayer.setName"
+		],
+		"body": [
+			"xPlayer.setName('${1:New Name}')",
+		],
+		"description": "Set new Name"
+	},
+	"xPlayer.setMaxWeight()": {
+		"prefix": [
+			"xPlayer.setMaxWeight"
+		],
+		"body": [
+			"xPlayer.setMaxWeight(${1:Max Weight})",
+		],
+		"description": "Set new Max Weight For Player"
+	},
+	"xPlayer.setInventoryItem()": {
+		"prefix": [
+			"xPlayer.setInventoryItem"
+		],
+		"body": [
+			"xPlayer.setInventoryItem('${1:Item Name}', ${2:Item Count})",
+		],
+		"description": "Set Item Count in player inventory"
+	},
+	"xPlayer.setCoords()": {
+		"prefix": [
+			"xPlayer.setCoords"
+		],
+		"body": [
+			"xPlayer.setCoords(${1:Pos})",
+		],
+		"description": "Set Player Coordinate"
+	},
+	"xPlayer.setAccountMoney()": {
+		"prefix": [
+			"xPlayer.setAccountMoney"
+		],
+		"body": [
+			"xPlayer.setAccountMoney('${1:Acoount Name}', ${2:Money})",
+		],
+		"description": "Set Money For An Account"
+	},
+	"xPlayer.removeWeaponComponent()": {
+		"prefix": [
+			"xPlayer.removeWeaponComponent"
+		],
+		"body": [
+			"xPlayer.removeWeaponComponent('${1:Weapon Name}', '${2:Component Name}')",
+		],
+		"description": "This function removes a weapon component from a player, if the player has it. The available component list can be found in the weapon configuration file (config.weapons.lua)."
+	},
+	"xPlayer.removeWeaponAmmo()": {
+		"prefix": [
+			"xPlayer.removeWeaponAmmo"
+		],
+		"body": [
+			"xPlayer.removeWeaponAmmo('${1:Weapon Name}', ${2:Ammo Count})",
+		],
+		"description": "This function removes the parsed ammo to the player weapon"
+	},
+	"xPlayer.removeWeapon()": {
+		"prefix": [
+			"xPlayer.removeWeapon"
+		],
+		"body": [
+			"xPlayer.removeWeapon('${1:Weapon Name}')",
+		],
+		"description": "This function removes the player weapon"
+	},
+	"xPlayer.removeMoney()": {
+		"prefix": [
+			"xPlayer.removeMoney"
+		],
+		"body": [
+			"xPlayer.removeMoney(${1:Money})",
+		],
+		"description": "This function removes player money"
+	},
+	"xPlayer.removeInventoryItem()": {
+		"prefix": [
+			"xPlayer.removeInventoryItem"
+		],
+		"body": [
+			"xPlayer.removeInventoryItem('${1:Name}',${2:Count})",
+		],
+		"description": "This function removes player item"
+	},
+	"xPlayer.removeAccountMoney()": {
+		"prefix": [
+			"xPlayer.removeAccountMoney"
+		],
+		"body": [
+			"xPlayer.removeAccountMoney('${1:Account Name}',${2:Count})",
+		],
+		"description": "This function removes player Account Money"
+	},
+	"xPlayer.kick()": {
+		"prefix": [
+			"xPlayer.kick"
+		],
+		"body": [
+			"xPlayer.kick('${1:Reason}')",
+		],
+		"description": "This function kicks player"
+	},
+	"xPlayer.hasWeapon()": {
+		"prefix": [
+			"xPlayer.hasWeapon"
+		],
+		"body": [
+			"xPlayer.hasWeapon('${1:Weapon Name}')",
+		],
+		"description": "This function Check Player Specific Weapon"
+	},
+	"xPlayer.hasWeaponComponent()": {
+		"prefix": [
+			"xPlayer.hasWeaponComponent"
+		],
+		"body": [
+			"xPlayer.hasWeaponComponent('${1:Weapon Name}','${2:Weapon Component}')",
+		],
+		"description": "This function Check Player Specific Weapon Comnponent"
+	},
+	"xPlayer.getWeight()": {
+		"prefix": [
+			"xPlayer.getWeight"
+		],
+		"body": [
+			"xPlayer.getWeight()",
+		],
+		"description": "This functions returns the current player weight in a number type, can be used to do calculations."
+	},
+	"xPlayer.getWeapon()": {
+		"prefix": [
+			"xPlayer.getWeapon"
+		],
+		"body": [
+			"xPlayer.getWeapon('${1:Weapon Name}')",
+		],
+		"description": "This functions returns the loadoutNum and a weapon object for the weapon if the player has it."
+	},
+	"xPlayer.getName()": {
+		"prefix": [
+			"xPlayer.getName"
+		],
+		"body": [
+			"xPlayer.getName()",
+		],
+		"description": "This function returns the player name."
+	},
+	"xPlayer.getMoney()": {
+		"prefix": [
+			"xPlayer.getMoney"
+		],
+		"body": [
+			"xPlayer.getMoney()",
+		],
+		"description": "This function returns the player money."
+	},
+	"xPlayer.getLoadout()": {
+		"prefix": [
+			"xPlayer.getLoadout"
+		],
+		"body": [
+			"xPlayer.getLoadout()",
+		],
+		"description": "This function returns the player loadout"
+	},
+	"xPlayer.getJob()": {
+		"prefix": [
+			"xPlayer.getJob"
+		],
+		"body": [
+			"xPlayer.getJob()",
+		],
+		"description": "This function returns the player job"
+	},
+	"xPlayer.getInventoryItem()": {
+		"prefix": [
+			"xPlayer.getInventoryItem"
+		],
+		"body": [
+			"xPlayer.getInventoryItem('${:1Item Name}')",
+		],
+		"description": "This function returns the player specific inventory item"
+	},
+	"xPlayer.getInventory()": {
+		"prefix": [
+			"xPlayer.getInventory"
+		],
+		"body": [
+			"xPlayer.getInventory()",
+		],
+		"description": "This function returns the player inventory item"
+	},
+	"xPlayer.getIdentifier()": {
+		"prefix": [
+			"xPlayer.getIdentifier"
+		],
+		"body": [
+			"xPlayer.getIdentifier()",
+		],
+		"description": "This function returns the player identifier"
+	},
+	"xPlayer.getGroup()": {
+		"prefix": [
+			"xPlayer.getGroup"
+		],
+		"body": [
+			"xPlayer.getGroup()",
+		],
+		"description": "This function returns the player group"
+	},
+	"xPlayer.getAccounts()": {
+		"prefix": [
+			"xPlayer.getAccounts"
+		],
+		"body": [
+			"xPlayer.getAccounts()",
+		],
+		"description": "This function returns the player accounts"
+	},
+	"xPlayer.getAccount()": {
+		"prefix": [
+			"xPlayer.getAccount"
+		],
+		"body": [
+			"xPlayer.getAccount('${1:Account Name}')",
+		],
+		"description": "This function returns the player account"
+	},
+	"xPlayer.canCarryItem()": {
+		"prefix": [
+			"xPlayer.canCarryItem"
+		],
+		"body": [
+			"xPlayer.canCarryItem('${1:Item Name}',${2:Item Count})",
+		],
+		"description": "This function is used to determinate if a player can carry an item, and is the successor to the previous item limit checks"
+	},
+	"xPlayer.addWeaponComponent()": {
+		"prefix": [
+			"xPlayer.addWeaponComponent"
+		],
+		"body": [
+			"xPlayer.addWeaponComponent('${1:Weapon Name}','${2:Component Name}')",
+		],
+		"description": "This function adds a weapon component to a weapon, if the player has it, the available component list can be found in the weapon configuration file."
+	},
+	"xPlayer.addWeaponAmmo()": {
+		"prefix": [
+			"xPlayer.addWeaponAmmo"
+		],
+		"body": [
+			"xPlayer.addWeaponAmmo('${1:Weapon Name}',${2:Ammo Count})",
+		],
+		"description": "This Function Adds Ammo To Player Specific Gun"
+	},
+	"xPlayer.addWeapon()": {
+		"prefix": [
+			"xPlayer.addWeapon"
+		],
+		"body": [
+			"xPlayer.addWeapon('${1:Weapon Name}',${2:Ammo Count})",
+		],
+		"description": "This Function Adds Weapon To Player."
+	},
+	"xPlayer.addMoney()": {
+		"prefix": [
+			"xPlayer.addMoney"
+		],
+		"body": [
+			"xPlayer.addMoney(${1:Money})",
+		],
+		"description": "This Function Adds Money To Player."
+	},
+	"xPlayer.addInventoryItem()": {
+		"prefix": [
+			"xPlayer.addInventoryItem"
+		],
+		"body": [
+			"xPlayer.addInventoryItem('${1:Item Name}',${2:Count})",
+		],
+		"description": "This Function Adds Item To Player."
+	},
+	"xPlayer.addAccountMoney()": {
+		"prefix": [
+			"xPlayer.addAccountMoney"
+		],
+		"body": [
+			"xPlayer.addAccountMoney('${1:Account Name}',${2:Count})",
+		],
+		"description": "This Function Adds Account Money To Player."
+	},
+	"xPlayer.setMoney()": {
+		"prefix": [
+			"xPlayer.setMoney"
+		],
+		"body": [
+			"xPlayer.setMoney(${1:Money})",
+		],
+		"description": "Set Money"
+	},
+	"xPlayer.setJob()": {
+		"prefix": [
+			"xPlayer.setJob"
+		],
+		"body": [
+			"xPlayer.setJob('${1:Job Name}',${2:Grade})",
+		],
+		"description": "Get All Players"
+	},
+	"ESX.RegisterServerCallback()": {
+		"prefix": "ESX.RegisterServerCallback",
+		"body": [
+			"ESX.RegisterServerCallback('${1:Callback Name}', function(source,cb) \n${2:-- Your code} \nend)"
+		],
+		"description": "Registers A Command Serverside/Clientside"
+	},
+	"ESX.RegisterUsableItem()": {
+		"prefix": "ESX.RegisterUsableItem",
+		"body": [
+			"ESX.RegisterUsableItem('${1:Item Name}', function(source) \n${2:-- Your code} \nend)"
+		],
+		"description": "Register An Item"
+	}
+}
