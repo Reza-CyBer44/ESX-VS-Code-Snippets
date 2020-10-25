@@ -1,11 +1,4 @@
 {
-    "Citizen.CreateThread()": {
-        "prefix": "Citizen.CreateThread",
-        "body": [
-            "Citizen.CreateThread(function()\n-- Your Code$1\nend)"
-        ],
-        "description": "Make a Thread"
-    },
     "ESX.GetPlayerFromId()": {
         "prefix": "ESX.GetPlayerFromId",
         "body": [
